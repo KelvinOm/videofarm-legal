@@ -7,16 +7,33 @@
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
   h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
   p.tagline { color: #666; margin-top: 0; }
   ul { padding-left: 1.25rem; }
   a { color: #0366d6; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
 </style>
 </head>
 <body>
   <h1>VideoFarm</h1>
   <p class="tagline">A personal tool for generating and publishing short-form videos.</p>
 
-  <p>VideoFarm is a self-hosted application used by a single operator to generate short-form videos and publish them to their own connected social media accounts (YouTube, Instagram, TikTok).</p>
+  <p>VideoFarm is a self-hosted application used by a single operator to generate short-form videos and publish them to their own connected social media accounts: <strong>YouTube</strong>, <strong>Instagram</strong>, and <strong>TikTok</strong>.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Generates short video scripts and renders 9:16 vertical videos with synced captions.</li>
+    <li>Connects to the operator's own social media accounts via official OAuth flows.</li>
+    <li>Publishes the finished videos to the operator's own accounts on the platforms listed above.</li>
+  </ul>
+
+  <h2>TikTok permissions requested</h2>
+  <p>When connecting a TikTok account, the app requests the following scopes:</p>
+  <ul>
+    <li><code>user.info.basic</code> — to read the connected creator's basic profile info (open id, display name, avatar).</li>
+    <li><code>video.upload</code> — to upload videos to the creator's TikTok inbox for the creator to finalize manually.</li>
+    <li><code>video.publish</code> — to publish videos directly to the creator's own TikTok profile on their behalf, with the caption and privacy setting they configured in VideoFarm.</li>
+  </ul>
 
   <h2>Legal</h2>
   <ul>
