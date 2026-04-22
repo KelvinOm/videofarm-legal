@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# videofarm-legal
-=======
 # VideoFarm legal pages
 
 Static pages hosted on GitHub Pages to satisfy platform developer-app requirements
@@ -28,4 +25,3 @@ After ~1 minute, the pages are live at:
 - `https://<your-user>.github.io/videofarm-legal/privacy.html`
 
 Paste those URLs into the TikTok developer app form.
->>>>>>> 1e5c0cd (Initial legal pages)
